@@ -9,7 +9,9 @@ interface ButtonProps {
 export default function Button(props: ButtonProps) {
     return (
         <a href={props.link} target="_blank">
-            <button className={styles.button} role="button">{props.title}</button>
+            <button className={styles.button}>
+                {props.title}
+            </button>
         </a>
     );
 }

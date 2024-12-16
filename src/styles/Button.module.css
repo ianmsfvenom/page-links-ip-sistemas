@@ -1,74 +1,31 @@
-
-
 .button {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 25px;
+  width: 100%;
   height: 60px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 100%;
-  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #daa250, #c98941);
+  font-size: 18px;
   font-weight: 600;
-  font-family: Poppins, sans-serif;
+  box-shadow: #daa250 0px 0px 20px;
+  color: white;
+  cursor: pointer;
+  animation: change-box-shadow 2s infinite;
   transition: all 0.3s ease-in-out;
-}
 
-.button:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #feed9b,
-    #c98941,
-    #feed9b,
-    #c98941
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 700%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: all 0.3s ease-in-out;
-  border-radius: 25px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #c98941 40%, #feed9b);
-  left: 0;
-  top: 0;
-  border-radius: 25px;
 }
 
 .button:hover {
   scale: 1.05;
+}
+
+@keyframes change-box-shadow {
+  0% {
+    box-shadow: #feed9b 0px 0px 20px;
+  }
+  50% {
+    box-shadow: #c98941 0px 0px 20px;
+  }
+  100% {
+    box-shadow: #feed9b 0px 0px 20px;
+  }
 }
