@@ -11,7 +11,7 @@
   cursor: pointer;
   animation: change-box-shadow 2s infinite;
   transition: all 0.3s ease-in-out;
-
+  letter-spacing: 2px;
 }
 
 .button:hover {
