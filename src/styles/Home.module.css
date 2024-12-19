@@ -43,6 +43,8 @@
   padding: 2px;
   width: 120px;
   box-shadow: #DAA250 0px 0px 10px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
 .titleLogo {
@@ -50,6 +52,8 @@
   margin-bottom: 50px;
   width: 100%;
   animation: fade-in 1s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 
 @keyframes fade-in {

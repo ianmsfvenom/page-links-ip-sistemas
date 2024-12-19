@@ -6,26 +6,26 @@
   background: linear-gradient(to right, #daa250, #c98941);
   font-size: 18px;
   font-weight: 600;
-  box-shadow: #daa250 0px 0px 20px;
+  box-shadow: #c98941 0px 0px 20px;
   color: white;
   cursor: pointer;
-  animation: change-box-shadow 2s infinite;
+  animation: fade-in 1s ease-in-out forwards;
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px;
+  opacity: 0;
 }
 
 .button:hover {
   scale: 1.05;
 }
 
-@keyframes change-box-shadow {
+@keyframes fade-in {
   0% {
-    box-shadow: #feed9b 0px 0px 20px;
-  }
-  50% {
-    box-shadow: #c98941 0px 0px 20px;
+    transform: translateY(10px);
+    opacity: 0;
   }
   100% {
-    box-shadow: #feed9b 0px 0px 20px;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

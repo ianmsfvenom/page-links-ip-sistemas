@@ -1,4 +1,3 @@
-import { title } from "process";
 import styles from "../styles/ListButtons.module.css";
 import Button from "./Button";
 
@@ -11,8 +10,8 @@ const buttons = [
 export default function ListButtons() {
     return (
         <div className={styles.list}>
-            {buttons.map((button) => (
-                <Button link={button.link} title={button.title} />
+            {buttons.map((button, index) => (
+                <Button link={button.link} title={button.title} delay={index + 1} />
             ))}
         </div>
     );
